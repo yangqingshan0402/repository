@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AA72DB2060B4060066B9E4 /* JDY_BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AA72DA2060B4060066B9E4 /* JDY_BLE.m */; };
+		18E9DFBE1E4EDA0B002E0344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DFBD1E4EDA0B002E0344 /* main.m */; };
+		18E9DFC11E4EDA0B002E0344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DFC01E4EDA0B002E0344 /* AppDelegate.m */; };
+		18E9DFC41E4EDA0B002E0344 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DFC31E4EDA0B002E0344 /* ViewController.m */; };
+		18E9DFC71E4EDA0B002E0344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E9DFC51E4EDA0B002E0344 /* Main.storyboard */; };
+		18E9DFC91E4EDA0B002E0344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E9DFC81E4EDA0B002E0344 /* Assets.xcassets */; };
+		18E9DFCC1E4EDA0B002E0344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E9DFCA1E4EDA0B002E0344 /* LaunchScreen.storyboard */; };
+		18E9DFD71E4EDA0B002E0344 /* JDY_BLE_SDK_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DFD61E4EDA0B002E0344 /* JDY_BLE_SDK_IOSTests.m */; };
+		18E9DFE21E4EDA0B002E0344 /* JDY_BLE_SDK_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DFE11E4EDA0B002E0344 /* JDY_BLE_SDK_IOSUITests.m */; };
+		18E9E00B1E4EDB91002E0344 /* TY_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9E0091E4EDB91002E0344 /* TY_ViewController.m */; };
+		18E9E00C1E4EDB91002E0344 /* TY_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E00A1E4EDB91002E0344 /* TY_ViewController.xib */; };
+		18E9E00F1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9E00E1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.m */; };
+		18E9E0191E4EDC5F002E0344 /* tm_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0111E4EDC5F002E0344 /* tm_img.png */; };
+		18E9E01A1E4EDC5F002E0344 /* wimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0121E4EDC5F002E0344 /* wimage.png */; };
+		18E9E01B1E4EDC5F002E0344 /* switch_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0131E4EDC5F002E0344 /* switch_img.png */; };
+		18E9E01C1E4EDC5F002E0344 /* massager100.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0141E4EDC5F002E0344 /* massager100.png */; };
+		18E9E01D1E4EDC5F002E0344 /* light_semitrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0151E4EDC5F002E0344 /* light_semitrans.png */; };
+		18E9E01E1E4EDC5F002E0344 /* SimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9E0171E4EDC5F002E0344 /* SimpleTableViewCell.m */; };
+		18E9E01F1E4EDC5F002E0344 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0181E4EDC5F002E0344 /* SimpleTableViewCell.xib */; };
+		18E9E0221E4EDCE8002E0344 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9E0211E4EDCE8002E0344 /* CoreBluetooth.framework */; };
+		18E9E0241E4EDCF8002E0344 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9E0231E4EDCF8002E0344 /* CoreLocation.framework */; };
+		18E9E0261E4EDD0B002E0344 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9E0251E4EDD0B002E0344 /* CoreData.framework */; };
+		18E9E0281E4EDD18002E0344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9E0271E4EDD18002E0344 /* Foundation.framework */; };
+		18E9E02C1E4EDEB9002E0344 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9E02B1E4EDEB9002E0344 /* QuartzCore.framework */; };
+		18E9E02E1E4EDECA002E0344 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9E02D1E4EDECA002E0344 /* UIKit.framework */; };
+		18E9E0301E4EE126002E0344 /* JDY_BLE.h in Sources */ = {isa = PBXBuildFile; fileRef = 18E9E0061E4EDB4C002E0344 /* JDY_BLE.h */; };
+		18E9E0361E4EE3AA002E0344 /* check_false.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0341E4EE3AA002E0344 /* check_false.png */; };
+		18E9E0371E4EE3AA002E0344 /* check_true.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0351E4EE3AA002E0344 /* check_true.png */; };
+		18E9E03B1E4EE3C2002E0344 /* switch_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0381E4EE3C2002E0344 /* switch_img.png */; };
+		18E9E03C1E4EE3C2002E0344 /* massager100.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E0391E4EE3C2002E0344 /* massager100.png */; };
+		18E9E03D1E4EE3C2002E0344 /* light_semitrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E03A1E4EE3C2002E0344 /* light_semitrans.png */; };
+		18E9E0401E4EE3DF002E0344 /* open_image1000.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E03E1E4EE3DF002E0344 /* open_image1000.png */; };
+		18E9E0411E4EE3DF002E0344 /* close_image1000.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E9E03F1E4EE3DF002E0344 /* close_image1000.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E9DFD31E4EDA0B002E0344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E9DFB11E4EDA0B002E0344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E9DFB81E4EDA0B002E0344;
+			remoteInfo = "JDY-BLE-SDK-IOS";
+		};
+		18E9DFDE1E4EDA0B002E0344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E9DFB11E4EDA0B002E0344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E9DFB81E4EDA0B002E0344;
+			remoteInfo = "JDY-BLE-SDK-IOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09AA72DA2060B4060066B9E4 /* JDY_BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDY_BLE.m; sourceTree = "<group>"; };
+		18E9DFB91E4EDA0B002E0344 /* JDY-BLE-SDK-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JDY-BLE-SDK-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E9DFBD1E4EDA0B002E0344 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E9DFBF1E4EDA0B002E0344 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E9DFC01E4EDA0B002E0344 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E9DFC21E4EDA0B002E0344 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18E9DFC31E4EDA0B002E0344 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E9DFC61E4EDA0B002E0344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E9DFC81E4EDA0B002E0344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E9DFCB1E4EDA0B002E0344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E9DFCD1E4EDA0B002E0344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9DFD21E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JDY-BLE-SDK-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E9DFD61E4EDA0B002E0344 /* JDY_BLE_SDK_IOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDY_BLE_SDK_IOSTests.m; sourceTree = "<group>"; };
+		18E9DFD81E4EDA0B002E0344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9DFDD1E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JDY-BLE-SDK-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E9DFE11E4EDA0B002E0344 /* JDY_BLE_SDK_IOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDY_BLE_SDK_IOSUITests.m; sourceTree = "<group>"; };
+		18E9DFE31E4EDA0B002E0344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E9E0061E4EDB4C002E0344 /* JDY_BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JDY_BLE.h; path = "JDY-BLE-SDK-IOS/JDY_BLE.h"; sourceTree = "<group>"; };
+		18E9E0081E4EDB91002E0344 /* TY_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TY_ViewController.h; sourceTree = "<group>"; };
+		18E9E0091E4EDB91002E0344 /* TY_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TY_ViewController.m; sourceTree = "<group>"; };
+		18E9E00A1E4EDB91002E0344 /* TY_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TY_ViewController.xib; sourceTree = "<group>"; };
+		18E9E00D1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jdy_scan_ble_ViewController.h; sourceTree = "<group>"; };
+		18E9E00E1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jdy_scan_ble_ViewController.m; sourceTree = "<group>"; };
+		18E9E0111E4EDC5F002E0344 /* tm_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tm_img.png; sourceTree = "<group>"; };
+		18E9E0121E4EDC5F002E0344 /* wimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wimage.png; sourceTree = "<group>"; };
+		18E9E0131E4EDC5F002E0344 /* switch_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_img.png; sourceTree = "<group>"; };
+		18E9E0141E4EDC5F002E0344 /* massager100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = massager100.png; sourceTree = "<group>"; };
+		18E9E0151E4EDC5F002E0344 /* light_semitrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_semitrans.png; sourceTree = "<group>"; };
+		18E9E0161E4EDC5F002E0344 /* SimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewCell.h; sourceTree = "<group>"; };
+		18E9E0171E4EDC5F002E0344 /* SimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewCell.m; sourceTree = "<group>"; };
+		18E9E0181E4EDC5F002E0344 /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
+		18E9E0211E4EDCE8002E0344 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		18E9E0231E4EDCF8002E0344 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18E9E0251E4EDD0B002E0344 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18E9E0271E4EDD18002E0344 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18E9E02B1E4EDEB9002E0344 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18E9E02D1E4EDECA002E0344 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18E9E0341E4EE3AA002E0344 /* check_false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_false.png; sourceTree = "<group>"; };
+		18E9E0351E4EE3AA002E0344 /* check_true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_true.png; sourceTree = "<group>"; };
+		18E9E0381E4EE3C2002E0344 /* switch_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_img.png; sourceTree = "<group>"; };
+		18E9E0391E4EE3C2002E0344 /* massager100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = massager100.png; sourceTree = "<group>"; };
+		18E9E03A1E4EE3C2002E0344 /* light_semitrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_semitrans.png; sourceTree = "<group>"; };
+		18E9E03E1E4EE3DF002E0344 /* open_image1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_image1000.png; sourceTree = "<group>"; };
+		18E9E03F1E4EE3DF002E0344 /* close_image1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_image1000.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E9DFB61E4EDA0B002E0344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9E02E1E4EDECA002E0344 /* UIKit.framework in Frameworks */,
+				18E9E02C1E4EDEB9002E0344 /* QuartzCore.framework in Frameworks */,
+				18E9E0281E4EDD18002E0344 /* Foundation.framework in Frameworks */,
+				18E9E0261E4EDD0B002E0344 /* CoreData.framework in Frameworks */,
+				18E9E0241E4EDCF8002E0344 /* CoreLocation.framework in Frameworks */,
+				18E9E0221E4EDCE8002E0344 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E9DFCF1E4EDA0B002E0344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E9DFDA1E4EDA0B002E0344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E9DFB01E4EDA0B002E0344 = {
+			isa = PBXGroup;
+			children = (
+				18E9E0061E4EDB4C002E0344 /* JDY_BLE.h */,
+				09AA72DA2060B4060066B9E4 /* JDY_BLE.m */,
+				18E9E0101E4EDC55002E0344 /* List_cell */,
+				18E9DFBB1E4EDA0B002E0344 /* JDY-BLE-SDK-IOS */,
+				18E9DFD51E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests */,
+				18E9DFE01E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests */,
+				18E9DFBA1E4EDA0B002E0344 /* Products */,
+				18E9E0201E4EDCE8002E0344 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18E9DFBA1E4EDA0B002E0344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E9DFB91E4EDA0B002E0344 /* JDY-BLE-SDK-IOS.app */,
+				18E9DFD21E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests.xctest */,
+				18E9DFDD1E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E9DFBB1E4EDA0B002E0344 /* JDY-BLE-SDK-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				18E9E00D1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.h */,
+				18E9E00E1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.m */,
+				18E9E0071E4EDB83002E0344 /* 透传 */,
+				18E9DFBF1E4EDA0B002E0344 /* AppDelegate.h */,
+				18E9DFC01E4EDA0B002E0344 /* AppDelegate.m */,
+				18E9DFC21E4EDA0B002E0344 /* ViewController.h */,
+				18E9DFC31E4EDA0B002E0344 /* ViewController.m */,
+				18E9DFC51E4EDA0B002E0344 /* Main.storyboard */,
+				18E9DFC81E4EDA0B002E0344 /* Assets.xcassets */,
+				18E9DFCA1E4EDA0B002E0344 /* LaunchScreen.storyboard */,
+				18E9DFCD1E4EDA0B002E0344 /* Info.plist */,
+				18E9DFBC1E4EDA0B002E0344 /* Supporting Files */,
+			);
+			path = "JDY-BLE-SDK-IOS";
+			sourceTree = "<group>";
+		};
+		18E9DFBC1E4EDA0B002E0344 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E9DFBD1E4EDA0B002E0344 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E9DFD51E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E9DFD61E4EDA0B002E0344 /* JDY_BLE_SDK_IOSTests.m */,
+				18E9DFD81E4EDA0B002E0344 /* Info.plist */,
+			);
+			path = "JDY-BLE-SDK-IOSTests";
+			sourceTree = "<group>";
+		};
+		18E9DFE01E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18E9DFE11E4EDA0B002E0344 /* JDY_BLE_SDK_IOSUITests.m */,
+				18E9DFE31E4EDA0B002E0344 /* Info.plist */,
+			);
+			path = "JDY-BLE-SDK-IOSUITests";
+			sourceTree = "<group>";
+		};
+		18E9E0071E4EDB83002E0344 /* 透传 */ = {
+			isa = PBXGroup;
+			children = (
+				18E9E03E1E4EE3DF002E0344 /* open_image1000.png */,
+				18E9E03F1E4EE3DF002E0344 /* close_image1000.png */,
+				18E9E0381E4EE3C2002E0344 /* switch_img.png */,
+				18E9E0391E4EE3C2002E0344 /* massager100.png */,
+				18E9E03A1E4EE3C2002E0344 /* light_semitrans.png */,
+				18E9E0341E4EE3AA002E0344 /* check_false.png */,
+				18E9E0351E4EE3AA002E0344 /* check_true.png */,
+				18E9E0081E4EDB91002E0344 /* TY_ViewController.h */,
+				18E9E0091E4EDB91002E0344 /* TY_ViewController.m */,
+				18E9E00A1E4EDB91002E0344 /* TY_ViewController.xib */,
+			);
+			name = "透传";
+			sourceTree = "<group>";
+		};
+		18E9E0101E4EDC55002E0344 /* List_cell */ = {
+			isa = PBXGroup;
+			children = (
+				18E9E0111E4EDC5F002E0344 /* tm_img.png */,
+				18E9E0121E4EDC5F002E0344 /* wimage.png */,
+				18E9E0131E4EDC5F002E0344 /* switch_img.png */,
+				18E9E0141E4EDC5F002E0344 /* massager100.png */,
+				18E9E0151E4EDC5F002E0344 /* light_semitrans.png */,
+				18E9E0161E4EDC5F002E0344 /* SimpleTableViewCell.h */,
+				18E9E0171E4EDC5F002E0344 /* SimpleTableViewCell.m */,
+				18E9E0181E4EDC5F002E0344 /* SimpleTableViewCell.xib */,
+			);
+			name = List_cell;
+			sourceTree = "<group>";
+		};
+		18E9E0201E4EDCE8002E0344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E9E02D1E4EDECA002E0344 /* UIKit.framework */,
+				18E9E02B1E4EDEB9002E0344 /* QuartzCore.framework */,
+				18E9E0271E4EDD18002E0344 /* Foundation.framework */,
+				18E9E0251E4EDD0B002E0344 /* CoreData.framework */,
+				18E9E0231E4EDCF8002E0344 /* CoreLocation.framework */,
+				18E9E0211E4EDCE8002E0344 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E9DFB81E4EDA0B002E0344 /* JDY-BLE-SDK-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E9DFE61E4EDA0B002E0344 /* Build configuration list for PBXNativeTarget "JDY-BLE-SDK-IOS" */;
+			buildPhases = (
+				18E9DFB51E4EDA0B002E0344 /* Sources */,
+				18E9DFB61E4EDA0B002E0344 /* Frameworks */,
+				18E9DFB71E4EDA0B002E0344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JDY-BLE-SDK-IOS";
+			productName = "JDY-BLE-SDK-IOS";
+			productReference = 18E9DFB91E4EDA0B002E0344 /* JDY-BLE-SDK-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E9DFD11E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E9DFE91E4EDA0B002E0344 /* Build configuration list for PBXNativeTarget "JDY-BLE-SDK-IOSTests" */;
+			buildPhases = (
+				18E9DFCE1E4EDA0B002E0344 /* Sources */,
+				18E9DFCF1E4EDA0B002E0344 /* Frameworks */,
+				18E9DFD01E4EDA0B002E0344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E9DFD41E4EDA0B002E0344 /* PBXTargetDependency */,
+			);
+			name = "JDY-BLE-SDK-IOSTests";
+			productName = "JDY-BLE-SDK-IOSTests";
+			productReference = 18E9DFD21E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18E9DFDC1E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E9DFEC1E4EDA0B002E0344 /* Build configuration list for PBXNativeTarget "JDY-BLE-SDK-IOSUITests" */;
+			buildPhases = (
+				18E9DFD91E4EDA0B002E0344 /* Sources */,
+				18E9DFDA1E4EDA0B002E0344 /* Frameworks */,
+				18E9DFDB1E4EDA0B002E0344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E9DFDF1E4EDA0B002E0344 /* PBXTargetDependency */,
+			);
+			name = "JDY-BLE-SDK-IOSUITests";
+			productName = "JDY-BLE-SDK-IOSUITests";
+			productReference = 18E9DFDD1E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E9DFB11E4EDA0B002E0344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					18E9DFB81E4EDA0B002E0344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G38AKGN648;
+						ProvisioningStyle = Manual;
+					};
+					18E9DFD11E4EDA0B002E0344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XQ3U5XRT8L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18E9DFB81E4EDA0B002E0344;
+					};
+					18E9DFDC1E4EDA0B002E0344 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XQ3U5XRT8L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18E9DFB81E4EDA0B002E0344;
+					};
+				};
+			};
+			buildConfigurationList = 18E9DFB41E4EDA0B002E0344 /* Build configuration list for PBXProject "JDY-BLE-SDK-IOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 18E9DFB01E4EDA0B002E0344;
+			productRefGroup = 18E9DFBA1E4EDA0B002E0344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E9DFB81E4EDA0B002E0344 /* JDY-BLE-SDK-IOS */,
+				18E9DFD11E4EDA0B002E0344 /* JDY-BLE-SDK-IOSTests */,
+				18E9DFDC1E4EDA0B002E0344 /* JDY-BLE-SDK-IOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E9DFB71E4EDA0B002E0344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9DFCC1E4EDA0B002E0344 /* LaunchScreen.storyboard in Resources */,
+				18E9E01F1E4EDC5F002E0344 /* SimpleTableViewCell.xib in Resources */,
+				18E9E0411E4EE3DF002E0344 /* close_image1000.png in Resources */,
+				18E9E0371E4EE3AA002E0344 /* check_true.png in Resources */,
+				18E9E03D1E4EE3C2002E0344 /* light_semitrans.png in Resources */,
+				18E9E01A1E4EDC5F002E0344 /* wimage.png in Resources */,
+				18E9E00C1E4EDB91002E0344 /* TY_ViewController.xib in Resources */,
+				18E9E03B1E4EE3C2002E0344 /* switch_img.png in Resources */,
+				18E9E01D1E4EDC5F002E0344 /* light_semitrans.png in Resources */,
+				18E9DFC91E4EDA0B002E0344 /* Assets.xcassets in Resources */,
+				18E9E03C1E4EE3C2002E0344 /* massager100.png in Resources */,
+				18E9E0401E4EE3DF002E0344 /* open_image1000.png in Resources */,
+				18E9E01B1E4EDC5F002E0344 /* switch_img.png in Resources */,
+				18E9DFC71E4EDA0B002E0344 /* Main.storyboard in Resources */,
+				18E9E01C1E4EDC5F002E0344 /* massager100.png in Resources */,
+				18E9E0361E4EE3AA002E0344 /* check_false.png in Resources */,
+				18E9E0191E4EDC5F002E0344 /* tm_img.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E9DFD01E4EDA0B002E0344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E9DFDB1E4EDA0B002E0344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E9DFB51E4EDA0B002E0344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9E0301E4EE126002E0344 /* JDY_BLE.h in Sources */,
+				18E9DFC41E4EDA0B002E0344 /* ViewController.m in Sources */,
+				18E9E01E1E4EDC5F002E0344 /* SimpleTableViewCell.m in Sources */,
+				18E9E00F1E4EDB9B002E0344 /* jdy_scan_ble_ViewController.m in Sources */,
+				18E9E00B1E4EDB91002E0344 /* TY_ViewController.m in Sources */,
+				09AA72DB2060B4060066B9E4 /* JDY_BLE.m in Sources */,
+				18E9DFC11E4EDA0B002E0344 /* AppDelegate.m in Sources */,
+				18E9DFBE1E4EDA0B002E0344 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E9DFCE1E4EDA0B002E0344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9DFD71E4EDA0B002E0344 /* JDY_BLE_SDK_IOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E9DFD91E4EDA0B002E0344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9DFE21E4EDA0B002E0344 /* JDY_BLE_SDK_IOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E9DFD41E4EDA0B002E0344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E9DFB81E4EDA0B002E0344 /* JDY-BLE-SDK-IOS */;
+			targetProxy = 18E9DFD31E4EDA0B002E0344 /* PBXContainerItemProxy */;
+		};
+		18E9DFDF1E4EDA0B002E0344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E9DFB81E4EDA0B002E0344 /* JDY-BLE-SDK-IOS */;
+			targetProxy = 18E9DFDE1E4EDA0B002E0344 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E9DFC51E4EDA0B002E0344 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E9DFC61E4EDA0B002E0344 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E9DFCA1E4EDA0B002E0344 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E9DFCB1E4EDA0B002E0344 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E9DFE41E4EDA0B002E0344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E9DFE51E4EDA0B002E0344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E9DFE71E4EDA0B002E0344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G38AKGN648;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "JDY-BLE-SDK-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JDY-BLE-SDK-IOS",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jdy.JDY-BLE-SDK-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_all_28;
+			};
+			name = Debug;
+		};
+		18E9DFE81E4EDA0B002E0344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G38AKGN648;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "JDY-BLE-SDK-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JDY-BLE-SDK-IOS",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jdy.JDY-BLE-SDK-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_all_28;
+			};
+			name = Release;
+		};
+		18E9DFEA1E4EDA0B002E0344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XQ3U5XRT8L;
+				INFOPLIST_FILE = "JDY-BLE-SDK-IOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SDK.JDY-BLE-SDK-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDY-BLE-SDK-IOS.app/JDY-BLE-SDK-IOS";
+			};
+			name = Debug;
+		};
+		18E9DFEB1E4EDA0B002E0344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XQ3U5XRT8L;
+				INFOPLIST_FILE = "JDY-BLE-SDK-IOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SDK.JDY-BLE-SDK-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDY-BLE-SDK-IOS.app/JDY-BLE-SDK-IOS";
+			};
+			name = Release;
+		};
+		18E9DFED1E4EDA0B002E0344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XQ3U5XRT8L;
+				INFOPLIST_FILE = "JDY-BLE-SDK-IOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SDK.JDY-BLE-SDK-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "JDY-BLE-SDK-IOS";
+			};
+			name = Debug;
+		};
+		18E9DFEE1E4EDA0B002E0344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XQ3U5XRT8L;
+				INFOPLIST_FILE = "JDY-BLE-SDK-IOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SDK.JDY-BLE-SDK-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "JDY-BLE-SDK-IOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E9DFB41E4EDA0B002E0344 /* Build configuration list for PBXProject "JDY-BLE-SDK-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9DFE41E4EDA0B002E0344 /* Debug */,
+				18E9DFE51E4EDA0B002E0344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E9DFE61E4EDA0B002E0344 /* Build configuration list for PBXNativeTarget "JDY-BLE-SDK-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9DFE71E4EDA0B002E0344 /* Debug */,
+				18E9DFE81E4EDA0B002E0344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E9DFE91E4EDA0B002E0344 /* Build configuration list for PBXNativeTarget "JDY-BLE-SDK-IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9DFEA1E4EDA0B002E0344 /* Debug */,
+				18E9DFEB1E4EDA0B002E0344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E9DFEC1E4EDA0B002E0344 /* Build configuration list for PBXNativeTarget "JDY-BLE-SDK-IOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9DFED1E4EDA0B002E0344 /* Debug */,
+				18E9DFEE1E4EDA0B002E0344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E9DFB11E4EDA0B002E0344 /* Project object */;
+}
